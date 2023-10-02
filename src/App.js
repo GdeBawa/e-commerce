@@ -13,6 +13,7 @@ import {
   AuthWrapper,
 } from "./pages";
 
+import Login from "./pages/Login";
 function App() {
   return (
     <AuthWrapper>
@@ -20,6 +21,7 @@ function App() {
         <Navbar />
         <Sidebar />
         <Routes>
+          <Route path="login" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart />} />
